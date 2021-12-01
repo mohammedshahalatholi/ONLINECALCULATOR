@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number one <input type="text" id="numone">
+    <br>
+    Number two  <input type="text" id="numtwo">
+ <b>  <p id="math"></p> </b>  
+        <input type="submit" onclick="functionadd()" value="Add">
+        <input type="submit" onclick="functionsub()"value="sub">
+        <input type="submit" onclick="functionmulti()"value="multi">
+        <input type="submit" onclick="functiondiv()"value="div">
+<script>
+
+function functionadd(){
+    var x=document.getElementById("numone").value;
+    var y=document.getElementById("numtwo").value;
+    
+   a=parseFloat(x);
+   b= parseFloat(y);
+    var z=a+b;
+    document.getElementById("math").innerHTML=+z;
+
+}
+function functionsub(){
+    var x=document.getElementById("numone").value;
+    var y=document.getElementById("numtwo").value;
+    a=parseFloat(x);
+   b= parseFloat(y)
+    var z=a-b;
+    document.getElementById("math").innerHTML=+z;
+
+}
+
+function functionmulti(){
+    var x=document.getElementById("numone").value;
+    var y=document.getElementById("numtwo").value;
+    a=parseFloat(x);
+   b= parseFloat(y)
+    var z=a*b;
+    document.getElementById("math").innerHTML=+z;
+
+}
+function functiondiv(){
+    var x=document.getElementById("numone").value;
+    var y=document.getElementById("numtwo").value;
+      a=parseFloat(x);
+   b= parseFloat(y)
+    var z=a/b;
+    document.getElementById("math").innerHTML="Division is "+z;
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>

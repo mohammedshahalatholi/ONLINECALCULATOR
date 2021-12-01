@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <form action="" method="" name="form" onsubmit="return validateform()">
+ First name <input type="text" name="fname">
+ <br>
+ Last name  <input type="text" name="lname">
+ <br>
+ Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="email" name="email" id="">
+ <br>
+ Arrival date <input type="date" name="" id="">
+ <br>
+ Departure Date <input type="date" name="" id="">
+ <br>
+ Country <select name="country">
+     <option value="india">India</option>
+     <option value="usa">USA</option>
+     <option value="germany">germany</option>
+     <option value="uae">UAE</option>
+ </select>
+<br>
+Payment         Debit card  Credit card
+<br> 
+<input type="button" value="">  <input type="button" value="">
+<br><br>
+<input type="submit" value="submit">  <input type="reset" value="reset">
+
+    </form>
+    <script>
+       function validateform(){
+        let x=document.forms["form"]["fname","lname","email","country"].value;
+        if(x=="")
+        {
+            alert("requred fill all fields");
+            return false;
+        }
+       }
+    </script>
+</body>
+</html>
